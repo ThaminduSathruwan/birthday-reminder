@@ -24,7 +24,7 @@ export function AddBirthdayButton() {
     const [open, setOpen] = useState(false)
     const [isLoading, setIsLoading] = useState(false)
 
-    const { register, handleSubmit, reset, formState: { errors } } = useForm<BirthdayInput>({
+    const { register, handleSubmit, reset, formState: { errors } } = useForm({
         resolver: zodResolver(birthdaySchema),
         defaultValues: {
             includeYear: true,

@@ -36,7 +36,7 @@ export function EditBirthdayButton({ birthday }: { birthday: Birthday }) {
         setValue,
         reset,
         formState: { errors },
-    } = useForm<BirthdayInput>({
+    } = useForm({
         resolver: zodResolver(birthdaySchema),
         defaultValues: {
             name: birthday.name,
