@@ -18,6 +18,7 @@ const TIMEZONES = [
     "Europe/Paris",
     "Asia/Tokyo",
     "Asia/Kolkata",
+    "Asia/Colombo",
     "Australia/Sydney",
 ]
 
